@@ -25,24 +25,24 @@ public class Control {
 		}
 	}
 	public void canalUp() {
-		if(tv.getEstado()== true) {
+		if(tv.getEstado() == true && canal > 1 && canal <= 120) {
 			tv.canalUp();
 		}
 		
 	}
 	public void canalDown() {
-		if(tv.getEstado()== true) {
+		if(tv.getEstado()== true && canal > 1 && canal <= 120) {
 			tv.canalDown();
 		}
 	}
 	
 	public void volumenUp() {
-		if(tv.getEstado()== true) {
+		if(tv.getEstado()== true & volumen > 0 && volumen <= 7) {
 			tv.volumenUp();
 		}
 	}
 	public void volumenDown() {
-		if(tv.getEstado()== true) {
+		if(tv.getEstado()== true & volumen > 0 && volumen <= 7) {
 			tv.volumenDown();
 		}
 	}
