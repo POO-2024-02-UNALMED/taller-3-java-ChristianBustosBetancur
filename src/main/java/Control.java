@@ -11,8 +11,7 @@ public class Control {
 		this.tv = tv;
 	}
 	
-	public Control() {
-	}
+	
 	
 	public void turnOn() {
 		if(tv.getEstado() == false) {
