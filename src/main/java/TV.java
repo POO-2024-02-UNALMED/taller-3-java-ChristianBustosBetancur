@@ -69,7 +69,7 @@ public class TV {
 		}
 	}
 	public void turnOff() {
-		if (estado == true) {
+		if (estado) {
 			estado = false;
 		}
 	}
@@ -79,27 +79,23 @@ public class TV {
 	}
 	
 	public void canalUp() {
-		if(estado == true
-				&& canal < 121) {
+		if(estado && canal < 121) {
 			canal++;
 		}			
 	}
 
 	public void canalDown() {
-		if(estado == true
-				&& canal> 1 ) {
+		if(estado && canal> 1 ) {
 			canal--;
 		}
 	}
 	public void volumenUp() {
-		if (estado == true  
-				&& volumen < 7) {
+		if (estado && volumen < 7 ) {
 			volumen++;
 		}
 	}
 	public void volumenDown() {
-		if (estado == true
-				&& volumen>0) {
+		if (estado && volumen>0 ) {
 			volumen--;
 		}
 	}
