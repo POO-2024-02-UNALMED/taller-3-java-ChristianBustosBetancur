@@ -20,40 +20,42 @@ public class Control {
 		}
 	}
 	public void turnOff() {
-		if(tv.getEstado()) {
+		if(tv.getEstado() == true) {
 			tv.turnOff();
 		}
 	}
 	public void canalUp() {
-		if(tv.getEstado()) {
+		if(tv.getEstado()== true) {
 			tv.canalUp();
 		}
 		
 	}
 	public void canalDown() {
-		if(tv.getEstado()) {
+		if(tv.getEstado()== true) {
 			tv.canalDown();
 		}
 	}
 	
 	public void volumenUp() {
-		if(tv.getEstado()) {
+		if(tv.getEstado()== true) {
 			tv.volumenUp();
 		}
 	}
 	public void volumenDown() {
-		if(tv.getEstado()) {
+		if(tv.getEstado()== true) {
 			tv.volumenDown();
 		}
 	}
 	
 	public void setCanal(int canal) {
-		if(tv.getEstado() && canal > 1 && canal < 121) {
+		if(tv.getEstado()==true
+				&& canal > 1 && canal <= 121) {
 			tv.setCanal(canal);
 		}
 	}
 	public void setVolumen(int volumen) {
-		if(tv.getEstado() && volumen > 0 && volumen < 7) {
+		if(tv.getEstado()==true 
+				&& volumen > 0 && volumen <= 7) {
 			tv.setVolumen(volumen);
 		}	
 	}
