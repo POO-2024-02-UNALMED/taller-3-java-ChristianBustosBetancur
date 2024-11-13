@@ -49,13 +49,13 @@ public class Control {
 	
 	public void setCanal(int canal) {
 		if(tv.getEstado()==true
-				&& canal > 1 && canal <= 120) {
+				&& canal > 1 && canal < 120) {
 			tv.setCanal(canal);
 		}
 	}
 	public void setVolumen(int volumen) {
 		if(tv.getEstado()==true 
-				&& volumen > 0 && volumen <= 7) {
+				&& volumen > 0 && volumen < 7) {
 			tv.setVolumen(volumen);
 		}	
 	}
