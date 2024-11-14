@@ -10,9 +10,7 @@ public class Control {
 	public void setTv(TV tv) {
 		this.tv = tv;
 	}
-	
-	
-	
+		
 	public void turnOn() {
 		if(tv.getEstado() == false) {
 			tv.turnOn();
